@@ -1,11 +1,8 @@
 import React from 'react'
-
+import { SignIn } from '@clerk/nextjs'
 type Props = {}
 
-function page({}: Props) {
-  return (
-    <div>page</div>
-  )
+const page = (props: Props) => {
+  return <SignIn />
 }
-
-export default page
+export default page;
