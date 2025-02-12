@@ -1,8 +1,8 @@
 
-import PricingSection from "@/components/priceCard";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function HeroSection() {
   return (
@@ -21,9 +21,6 @@ export default function HeroSection() {
               <Link href="#pricing">Pricing</Link>
               <Link href="#about">About</Link>
             </nav>
-            <Button className="bg-white text-primary ">
-              <Link href = "/dashboard"> Login </Link>
-            </Button>
           </div>
 
           <div className="mx-auto mt-16 max-w-3xl text-center">
@@ -71,10 +68,6 @@ export default function HeroSection() {
           <p className="text-sm text-blue-300">Scroll for details</p>
         </div>
       </div>
-      <PricingSection/>
     </section>
-
-    
   );
 }
-
